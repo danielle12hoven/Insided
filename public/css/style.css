@@ -92,13 +92,17 @@ h3 {
 }
 
 /* Grey background color for the drop-down boxes */
-.drop-down-main {
-    background:#CCCCCC;
-  }
-
-.drop-down{
-    background:#CCCCCC;
-    display: none;
+.drop-down {
+  background:#CCCCCC;
+}
+#drop-down-second {
+  display: none;
+}
+#drop-down-third {
+  display: none;
+}
+#drop-down-fourth {
+  display: none;
 }
 
 
