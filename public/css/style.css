@@ -76,7 +76,7 @@ h3 {
 .menu > ul > li {
     float:left;
     position:relative;
-    font-size:16px;
+    font-size:14px;
     text-align: center;
     margin: 20px;
 }
@@ -95,6 +95,10 @@ h3 {
 .drop-down {
   background:#CCCCCC;
 }
+
+#drop-down-first {
+  clear: both;
+}
 /* Setting display to none hides divs until ready to be called */
 #drop-down-second {
   display: none;
@@ -106,6 +110,9 @@ h3 {
   display: none;
   clear: both;
   /* clear: both allows div to be placed on new line */
+}
+#drop-down-fifth {
+  display: none;
 }
 #sub-menu1 {
   display: none;

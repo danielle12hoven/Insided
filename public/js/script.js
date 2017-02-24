@@ -79,3 +79,25 @@ $(".wrap-menu").click(function(){
 $("#drop-down4").click(function(e){
   e.stopPropagation();
 });
+
+
+
+// WORKS - Show drop down 2 when clicked
+var dropDown5 = function() {
+  $("#drop-down-fifth").show("slow")
+}
+$(".click-me4").click(dropDown5)
+// WORKS - Show sub menu 2 when clicked
+$( "#drop-down5" ).click(function() {
+  $( "#sub-menu5" ).toggle("fast", function(){
+  })
+});
+
+// WORKS - Hides drop-down once selection's been made
+$(".wrap-menu").click(function(){
+  $("#sub-menu5").hide("slow");
+});
+// WORKS - Hides the menu when clicking anywhere but inside the drop-down
+$("#drop-down5").click(function(e){
+  e.stopPropagation();
+});
