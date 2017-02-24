@@ -44,6 +44,13 @@ h3 {
     border-radius: 5px;
 }
 
+.drop-down-main {
+    list-style:none;
+    border: solid black 1px;
+    width: 200px;
+    border-radius: 5px;
+}
+
 .menu span {
     color: black;
 }
@@ -85,16 +92,20 @@ h3 {
 }
 
 /* Grey background color for the drop-down boxes */
-.drop-down {
+.drop-down-main {
     background:#CCCCCC;
-}
+  }
 
+.drop-down{
+    background:#CCCCCC;
+    display: none;
+}
 
 
 /* Allows menu's to drop down and show */
 .menu li:hover .sub-menu {
-    z-index:1;
-    opacity:1;
+    z-index: 1;
+    opacity: 1;
     margin-top: -5px;
 }
 
