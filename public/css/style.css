@@ -95,6 +95,7 @@ h3 {
 .drop-down {
   background:#CCCCCC;
 }
+/* Setting display to none hides divs until ready to be called */
 #drop-down-second {
   display: none;
 }
@@ -103,11 +104,16 @@ h3 {
 }
 #drop-down-fourth {
   display: none;
+  clear: both;
+  /* clear: both allows div to be placed on new line */
+}
+#sub-menu1 {
+  display: none;
 }
 
 
 /* Allows menu's to drop down and show */
-.menu li:hover .sub-menu {
+.menu li/* :hover */ .sub-menu {
     z-index: 1;
     opacity: 1;
     margin-top: -5px;
