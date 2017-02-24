@@ -1,11 +1,28 @@
-.clearfix:after {
-    display:block;
-    clear:both;
-}
-
 /* Creates grey background */
 body {
   background-color: #CCCCCC;
+  font-family:'Ek Mukta';
+}
+
+h3 {
+  margin-left: 60px;
+}
+
+
+/* Button stylng */
+.button-div {
+  display: block;
+  position: relative;
+  clear: both;
+  margin-left: 60px;
+}
+
+
+
+/* Clearfix will allow divs to move if screen gets smaller */
+/* In this case I floated the UL and Li */
+.clearfix:after {
+    display:block;
 }
 
 
@@ -17,13 +34,14 @@ body {
     background: white;
     border: solid black 1px;
     box-shadow:0px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
 
 .drop-down {
-    margin:30px;
     list-style:none;
     border: solid black 1px;
-    /* font-family:'Ek Mukta'; */
+    width: 200px;
+    border-radius: 5px;
 }
 
 .menu span {
@@ -51,7 +69,8 @@ body {
 .menu > ul > li {
     float:left;
     position:relative;
-    font-size:19px;
+    font-size:16px;
+    text-align: center;
     margin: 20px;
 }
 
@@ -66,44 +85,44 @@ body {
 }
 
 /* Grey background color for the drop-down boxes */
-.menu > ul > li:hover > span, .menu > ul > .current-item {
+.drop-down {
     background:#CCCCCC;
 }
 
 
 
-/*----- Bottom Level -----*/
+/* Allows menu's to drop down and show */
 .menu li:hover .sub-menu {
     z-index:1;
     opacity:1;
+    margin-top: -5px;
 }
 
+/* This is the actual menu that is hidden until HOVER is used above */
+/* Setting position to ABSOLUTE makes sure that the sub menu is directly below the top menu */
 .sub-menu {
-    width:160%;
+    width:100%;
     padding:5px 0px;
     position:absolute;
     top:100%;
-    left:0px;
-    z-index:-1;
+    left:-1px;
+    z-index: -1;
     opacity:0;
     transition:opacity linear 0.15s;
     box-shadow:0px 2px 3px rgba(0,0,0,0.2);
     background:#CCCCCC;
+    border: solid black 1px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
+
+/* Removes bullet points from list items */
 .sub-menu li {
-    display:block;
+    list-style-type: none;
     font-size:16px;
 }
 
-.sub-menu li a {
-    padding:10px 30px;
-    display:block;
-}
-
-.sub-menu li a:hover, .sub-menu .current-item a {
-    background:#3e3436;
-}
 
 
 
