@@ -17,6 +17,9 @@ h3 {
   margin-left: 60px;
 }
 
+hr {
+  clear: both;
+}
 
 
 /* Clearfix will allow divs to move if screen gets smaller */
@@ -29,7 +32,7 @@ h3 {
 /* margin 0px auto makes sure that the nav bar is centered */
 .menu {
     width:1000px;
-    height: 600px;
+    height: 700px;
     margin:0px auto;
     background: white;
     border: solid black 1px;
@@ -70,14 +73,11 @@ h3 {
 
 
 
-
-
 /* Creates the drop down, and contains the drop-down items */
 .menu > ul > li {
     float:left;
     position:relative;
     font-size:14px;
-    text-align: center;
     margin: 20px;
 }
 
@@ -96,9 +96,14 @@ h3 {
   background:#CCCCCC;
 }
 
+/* clear: both allows div to be placed on new line */
 #drop-down-first {
   clear: both;
 }
+#drop-down-fourth {
+  clear: both;
+}
+
 /* Setting display to none hides divs until ready to be called */
 #drop-down-second {
   display: none;
@@ -106,15 +111,19 @@ h3 {
 #drop-down-third {
   display: none;
 }
-#drop-down-fourth {
-  display: none;
-  clear: both;
-  /* clear: both allows div to be placed on new line */
-}
 #drop-down-fifth {
   display: none;
 }
 #sub-menu1 {
+  display: none;
+}
+#sub-menu4 {
+  display: none;
+}
+#fake-menu1 {
+  display: none;
+}
+#fake-menu2 {
   display: none;
 }
 
@@ -146,9 +155,19 @@ h3 {
 
 
 /* Removes bullet points from list items */
-.sub-menu li {
+li {
     list-style-type: none;
     font-size:16px;
+}
+ul {
+  list-style-type: none;
+}
+
+.sub-check-boxes {
+  list-style-type: none;
+  text-align: left;
+  text-decoration: none;
+  padding-left: 0;
 }
 
 

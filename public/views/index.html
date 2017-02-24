@@ -17,19 +17,28 @@
         <h3>Advanced Search</h3>
 
         <ul class="clearfix" id="row-1">
-
+            <!-- Static Boxes -->
             <li class="drop-down" id="static-drop-down1">
-                <span>Comments<span class="arrow">&#9660;</span></span>
+                <span id="fake-drop-down1">Comments<span class="arrow">&#9660;</span></span>
+                  <ul class="sub-menu" id="fake-menu1">
+                    <li><input class="click-me" type="checkbox">Greater than 50</li>
+                    <li><input class="click-me" type="checkbox">Fewer than 50</li>
+                  </ul>
             </li>
             <li class="drop-down" id="static-drop-down2">
-                <span>is greater than<span class="arrow">&#9660;</span></span>
+                <span id="fake-drop-down2">is greater than<span class="arrow">&#9660;</span></span>
+                  <ul class="sub-menu" id="fake-menu2">
+                    <li><input class="click-me" type="checkbox">Is smaller than</li>
+                    <li><input class="click-me" type="checkbox">Is greater than</li>
+                  </ul>
             </li>
 
+            <!-- Active Boxes -->
             <li class="drop-down" id="drop-down-first">
-                <span id="drop-down1">Registration Date<span class="arrow">&#9660;</span></span>
+                <span id="drop-down1">Choose Filter<span class="arrow">&#9660;</span></span>
                   <ul class="sub-menu" id="sub-menu1">
-                    <li><input class="click-me1" type="checkbox">Feb 24</li>
-                    <li><input class="click-me1" type="date"></li>
+                    <li><input class="click-me1" type="checkbox">Registration Date</li>
+                    <li><input class="click-me1" type="checkbox">Event Date</li>
                   </ul>
             </li>
             <li class="drop-down" id="drop-down-second">
@@ -41,7 +50,7 @@
                   </ul>
             </li>
             <li class="drop-down" id="drop-down-third">
-                <span id="drop-down3">Pick Date<span class="arrow">&#9660;</span></span>
+                <span id="drop-down3">Date<span class="arrow">&#9660;</span></span>
                   <ul class="sub-menu" id="sub-menu3">
                     <li><input class="click-me3" type="date"></li>
                   </ul>
@@ -68,11 +77,12 @@
                       <li><input class="click-me5" type="checkbox"> Option #2 for Group 1</li>
                       <li><input class="click-me5" type="checkbox"> Option #3 for Group 1</li>
                     <p>Group 2</p>
-                      <li><input class="click-me5" type="checkbox"></li>
-                      <li><input class="click-me5" type="checkbox"></li>
-                      <li><input class="click-me5" type="checkbox"></li>
+                      <li><input class="click-me5" type="checkbox">Bacon</li>
+                      <li><input class="click-me5" type="checkbox">Ipsum</li>
+                      <li><input class="click-me5" type="checkbox">Dolor</li>
                   </ul>
             </li>
+            <button type="">X</button>
           </ul>
 
         <div class="button-div">
@@ -82,17 +92,74 @@
         <br>
         <hr>
 
-        <h3>Options</h3>
+        <h3>Columns</h3>
 
+        <ul class="clearfix" id="row-3">
+            <li class="check-boxes">
+                  <ul class="sub-check-boxes">
+                    <li><input class="column-list" type="checkbox">Usertitle</li>
+                    <li><input class="column-list" type="checkbox">Comments</li>
+                    <li><input class="column-list" type="checkbox">Deleted comments</li>
+                    <li><input class="column-list" type="checkbox">Deleted topics</li>
+                    <li><input class="column-list" type="checkbox">Questions solved</li>
+                  </ul>
+            </li>
+            <li class="check-boxes">
+                  <ul class="sub-check-boxes">
+                    <li><input class="column-list" type="checkbox">Topics</li>
+                    <li><input class="column-list" type="checkbox">User group</li>
+                    <li><input class="column-list" type="checkbox">Secondary user</li>
+                    <li><input class="column-list" type="checkbox">Registered user</li>
+                    <li><input class="column-list" type="checkbox">Last login</li>
+                  </ul>
+            </li>
+            <li class="check-boxes">
+                  <ul class="sub-check-boxes">
+                    <li><input class="column-list" type="checkbox">Spicy</li>
+                    <li><input class="column-list" type="checkbox">Jalapeno</li>
+                    <li><input class="column-list" type="checkbox">Bacon</li>
+                    <li><input class="column-list" type="checkbox">Ipson</li>
+                    <li><input class="column-list" type="checkbox">Dolor</li>
+                  </ul>
+            </li>
+            <li class="check-boxes">
+                  <ul class="sub-check-boxes">
+                    <li><input class="column-list" type="checkbox">Amet</li>
+                    <li><input class="column-list" type="checkbox">Tongue</li>
+                    <li><input class="column-list" type="checkbox">Ribeye</li>
+                    <li><input class="column-list" type="checkbox">Tail</li>
+                    <li><input class="column-list" type="checkbox">Hamburger</li>
+                  </ul>
+            </li>
+            <li class="check-boxes">
+                  <ul class="sub-check-boxes">
+                    <li><input class="column-list" type="checkbox">Profession</li>
+                    <li><input class="column-list" type="checkbox">Signature</li>
+                    <li><input class="column-list" type="checkbox">Notes</li>
+                    <li><input class="column-list" type="checkbox">Badges</li>
+                  </ul>
+            </li>
+            <li class="check-boxes">
+                  <ul class="sub-check-boxes">
+                    <li><input class="column-list" type="checkbox">Reputation received</li>
+                    <li><input class="column-list" type="checkbox">Reputation given</li>
+                    <li><input class="column-list" type="checkbox">Followers</li>
+                    <li><input class="column-list" type="checkbox">Following</li>
+                  </ul>
+            </li>
+       </ul>
+
+        <br>
+        <hr>
+
+        <div class="button-div">
+          <button id="button2">Update</button>
+          <a href="">cancel</a>
+        </div>
 
 
       </nav>
     </div>
-
-
-
-
-
 
 
 

@@ -2,10 +2,30 @@
 $(".sub-menu").hide(function() {
 })
 
+// Fake Menus
+$( "#fake-drop-down1" ).click(function() {
+  $( "#fake-menu1" ).toggle("fast", function(){
+  })
+});
+$( "#fake-drop-down2" ).click(function() {
+  $( "#fake-menu2" ).toggle("fast", function(){
+  })
+});
+// Hides drop-down once selection's been made
+$(".wrap-menu").click(function(){
+  $("#fake-menu1").hide("slow");
+});
+$(".wrap-menu").click(function(){
+  $("#fake-menu2").hide("slow");
+});
+// Hides the menu when clicking anywhere but inside the drop-down
+$("#fake-drop-down1").click(function(e){
+  e.stopPropagation();
+});
+$("#fake-drop-down2").click(function(e){
+  e.stopPropagation();
+});
 
-// var dropDown1 = function() {
-//   $("sub-menu1").hide("fast")
-// }
 
 
 // WORKS - Show sub menu 1 when clicked (toggle open and close)
@@ -62,15 +82,14 @@ $( "#drop-down3" ).click(function() {
 
 // WORKS - Show sub menu 4
 var newRow = function() {
-  $("#drop-down-fourth").show("fast")
+  $("#drop-down-fourth").show("slow")
 }
-$("#button1").click(newRow)
+$(".click-me1").click(newRow)
 // WORKS - Show sub menu 3 when clicked
 $( "#drop-down4" ).click(function() {
   $( "#sub-menu4" ).toggle("fast", function(){
   })
 });
-
 // WORKS - Hides drop-down once selection's been made
 $(".wrap-menu").click(function(){
   $("#sub-menu4").hide("slow");
@@ -82,7 +101,7 @@ $("#drop-down4").click(function(e){
 
 
 
-// WORKS - Show drop down 2 when clicked
+// WORKS - Show drop down 5 when clicked
 var dropDown5 = function() {
   $("#drop-down-fifth").show("slow")
 }
@@ -101,3 +120,11 @@ $(".wrap-menu").click(function(){
 $("#drop-down5").click(function(e){
   e.stopPropagation();
 });
+
+
+
+
+// BUTTON
+$("#button1").click(newRow)
+
+
