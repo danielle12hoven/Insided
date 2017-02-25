@@ -185,129 +185,142 @@ $("#delete-button").click(deleteRow)
 
 
 // TAG SECTION //
-$(function(){
+var comments = function(){
     $('#comments').click(function(){
-        var appendItem = $('<input type="button" value="x comments"/>');
-        $(".tag-menu").append(appendItem);
+        var appendItem1 = $('<input type="button" id="comments-button" value="x comments"/>');
+        $(".tag-menu").append(appendItem1);
     });
-});
-$(function(){
+};
+comments()
+
+$("#comments").click(function() {
+  (appendItem1).hide()
+})
+
+
+var deleted = function(){
     $('#deleted').click(function(){
         var appendItem = $('<input type="button" value="x deleted"/>');
         $(".tag-menu").append(appendItem);
     });
-});
-$(function(){
+};
+deleted()
+var notes = function(){
     $('#notes').click(function(){
         var appendItem = $('<input type="button" value="x notes"/>');
         $(".tag-menu").append(appendItem);
     });
-});
-
-$(function(){
+};
+notes()
+var smaller = function(){
     $('#smaller').click(function(){
         var appendItem = $('<input type="button" value="x smaller"/>');
         $(".tag-menu").append(appendItem);
     });
-});
-$(function(){
+};
+smaller()
+var greater = function(){
     $('#greater').click(function(){
         var appendItem = $('<input type="button" value="x greater"/>');
         $(".tag-menu").append(appendItem);
     });
-});
-
-$(function(){
+};
+greater()
+var registeredDate = function(){
     $('#registered-date').click(function(){
         var appendItem = $('<input type="button" value="x registered date"/>');
         $(".tag-menu").append(appendItem);
     });
-});
-$(function(){
+};
+registeredDate()
+var eventDate = function(){
     $('#event').click(function(){
         var appendItem = $('<input type="button" value="x event date"/>');
         $(".tag-menu").append(appendItem);
     });
-});
-
-$(function(){
+};
+eventDate()
+var registeredBefore = function(){
     $('#before').click(function(){
         var appendItem = $('<input type="button" value="x registered before"/>');
         $(".tag-menu").append(appendItem);
     });
-});
-
-$(function(){
+};
+registeredBefore()
+var registeredAfter = function(){
     $('#after').click(function(){
         var appendItem = $('<input type="button" value="x registered after"/>');
         $(".tag-menu").append(appendItem);
     });
-});
-
-$(function(){
+};
+registeredAfter()
+var registeredOn = function(){
     $('#on').click(function(){
         var appendItem = $('<input type="button" value="x registered on"/>');
         $(".tag-menu").append(appendItem);
     });
-});
-
-$(function(){
+};
+registeredOn()
+var registeredUser = function(){
     $('#registered-user').click(function(){
         var appendItem = $('<input type="button" value="x registered user"/>');
         $(".tag-menu").append(appendItem);
     });
-});
-
-$(function(){
+};
+registeredUser()
+var moederator = function(){
     $('#moderator').click(function(){
         var appendItem = $('<input type="button" value="x moderator"/>');
         $(".tag-menu").append(appendItem);
     });
-});
-
-$(function(){
+};
+moederator()
+var superUser = function(){
     $('#super-user').click(function(){
         var appendItem = $('<input type="button" value="x super-user"/>');
         $(".tag-menu").append(appendItem);
     });
-});
-
-$(function(){
+};
+superUser()
+var option1 = function(){
     $('#option 1').click(function(){
         var appendItem = $('<input type="button" value="x option 1"/>');
         $(".tag-menu").append(appendItem);
     });
-});
-
-$(function(){
+};
+option1()
+var option2 = function(){
     $('#option 2').click(function(){
         var appendItem = $('<input type="button" value="x option 2"/>');
         $(".tag-menu").append(appendItem);
     });
-});
-$(function(){
+};
+option2()
+var option3 = function(){
     $('#option 3').click(function(){
         var appendItem = $('<input type="button" value="x option 3"/>');
         $(".tag-menu").append(appendItem);
     });
-});
-
-$(function(){
+};
+option3
+var bacon = function(){
     $('#bacon').click(function(){
         var appendItem = $('<input type="button" value="x bacon"/>');
         $(".tag-menu").append(appendItem);
     });
-});
-$(function(){
+};
+bacon()
+var ipsum = function(){
     $('#ipsum').click(function(){
         var appendItem = $('<input type="button" value="x ipsum"/>');
         $(".tag-menu").append(appendItem);
     });
-});
-$(function(){
+};
+ipsum()
+var dolor = function(){
     $('#dolor').click(function(){
         var appendItem = $('<input type="button" value="x dolor"/>');
         $(".tag-menu").append(appendItem);
     });
-});
-
+};
+dolor()
