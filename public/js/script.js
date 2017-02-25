@@ -158,10 +158,6 @@ $("#uncheck-all").click(function() {
 // });
 
 
-
-// BUTTON
-$("#button1").click(function() {
-})
 // // DELETE BUTTON
 var deleteButton = function() {
   $("#delete-button").show("slow")
@@ -169,12 +165,149 @@ var deleteButton = function() {
 $("#apply-button").click(deleteButton)
 
 var deleteRow = function() {
-  $("#static-drop-down2").remove()
-  $("#drop-down-first").remove()
-  $("#drop-down-second").remove()
-  $("#drop-down-third").remove()
-  $("#drop-down-fourth").remove()
-  $("#drop-down-fifth").remove()
-  $("#delete-button").remove()
+  $("#static-drop-down2").hide()
+  $("#drop-down-first").hide()
+  $("#drop-down-second").hide()
+  $("#drop-down-third").hide()
+  $("#drop-down-fourth").hide()
+  $("#drop-down-fifth").hide()
+  $("#delete-button").hide()
 }
 $("#delete-button").click(deleteRow)
+
+
+// PART TWO //
+
+
+
+
+
+
+
+// TAG SECTION //
+$(function(){
+    $('#comments').click(function(){
+        var appendItem = $('<input type="button" value="x comments"/>');
+        $(".tag-menu").append(appendItem);
+    });
+});
+$(function(){
+    $('#deleted').click(function(){
+        var appendItem = $('<input type="button" value="x deleted"/>');
+        $(".tag-menu").append(appendItem);
+    });
+});
+$(function(){
+    $('#notes').click(function(){
+        var appendItem = $('<input type="button" value="x notes"/>');
+        $(".tag-menu").append(appendItem);
+    });
+});
+
+$(function(){
+    $('#smaller').click(function(){
+        var appendItem = $('<input type="button" value="x smaller"/>');
+        $(".tag-menu").append(appendItem);
+    });
+});
+$(function(){
+    $('#greater').click(function(){
+        var appendItem = $('<input type="button" value="x greater"/>');
+        $(".tag-menu").append(appendItem);
+    });
+});
+
+$(function(){
+    $('#registered-date').click(function(){
+        var appendItem = $('<input type="button" value="x registered date"/>');
+        $(".tag-menu").append(appendItem);
+    });
+});
+$(function(){
+    $('#event').click(function(){
+        var appendItem = $('<input type="button" value="x event date"/>');
+        $(".tag-menu").append(appendItem);
+    });
+});
+
+$(function(){
+    $('#before').click(function(){
+        var appendItem = $('<input type="button" value="x registered before"/>');
+        $(".tag-menu").append(appendItem);
+    });
+});
+
+$(function(){
+    $('#after').click(function(){
+        var appendItem = $('<input type="button" value="x registered after"/>');
+        $(".tag-menu").append(appendItem);
+    });
+});
+
+$(function(){
+    $('#on').click(function(){
+        var appendItem = $('<input type="button" value="x registered on"/>');
+        $(".tag-menu").append(appendItem);
+    });
+});
+
+$(function(){
+    $('#registered-user').click(function(){
+        var appendItem = $('<input type="button" value="x registered user"/>');
+        $(".tag-menu").append(appendItem);
+    });
+});
+
+$(function(){
+    $('#moderator').click(function(){
+        var appendItem = $('<input type="button" value="x moderator"/>');
+        $(".tag-menu").append(appendItem);
+    });
+});
+
+$(function(){
+    $('#super-user').click(function(){
+        var appendItem = $('<input type="button" value="x super-user"/>');
+        $(".tag-menu").append(appendItem);
+    });
+});
+
+$(function(){
+    $('#option 1').click(function(){
+        var appendItem = $('<input type="button" value="x option 1"/>');
+        $(".tag-menu").append(appendItem);
+    });
+});
+
+$(function(){
+    $('#option 2').click(function(){
+        var appendItem = $('<input type="button" value="x option 2"/>');
+        $(".tag-menu").append(appendItem);
+    });
+});
+$(function(){
+    $('#option 3').click(function(){
+        var appendItem = $('<input type="button" value="x option 3"/>');
+        $(".tag-menu").append(appendItem);
+    });
+});
+
+$(function(){
+    $('#bacon').click(function(){
+        var appendItem = $('<input type="button" value="x bacon"/>');
+        $(".tag-menu").append(appendItem);
+    });
+});
+$(function(){
+    $('#ipsum').click(function(){
+        var appendItem = $('<input type="button" value="x ipsum"/>');
+        $(".tag-menu").append(appendItem);
+    });
+});
+$(function(){
+    $('#dolor').click(function(){
+        var appendItem = $('<input type="button" value="x dolor"/>');
+        $(".tag-menu").append(appendItem);
+    });
+});
+

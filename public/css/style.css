@@ -12,7 +12,7 @@ h3 {
 /* Button stylng */
 .button-div {
   display: block;
-  position: relative;
+  position: absolute;
   clear: both;
   margin-left: 60px;
 }
@@ -24,14 +24,16 @@ h3 {
   background-color: red;
   border-radius: 5px;
   display: none;
-  position: fixed;
+  position: absolute;
 }
 .add-button {
   display: block;
   clear: both;
+  margin-left: 60px;
 }
 #button1 {
-  display: none;
+  z-index: 1;
+  opacity: 1;
 }
 hr {
   clear: both;
@@ -75,10 +77,6 @@ span {
     border: solid black 1px;
     width: 200px;
     border-radius: 5px;
-}
-
-.menu span {
-    color: black;
 }
 
 
@@ -198,5 +196,23 @@ ul {
 }
 
 
+/* TAG MENU */
+.tag-menu {
+  background-color: #CCCCCC;
+  width: 1000px;
+  height: 100px;
+}
 
+
+
+/* PART 2 */
+.menu2 {
+    width:1000px;
+    height: 700px;
+    margin:0px auto;
+    background: white;
+    border: solid black 1px;
+    box-shadow:0px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
 
