@@ -143,7 +143,7 @@ $("#uncheck-all").click(function() {
 
 // BUTTON
 $("#button1").click(function() {
-  $("#row-1").clone().appendTo(".new-list")
+  $("#row-1").clone().appendTo("#new-list")
 })
 
 // // DELETE BUTTON
