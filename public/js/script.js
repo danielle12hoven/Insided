@@ -83,6 +83,7 @@ $("#drop-down2").click(function(e){
 var dropDown3 = function() {
   $("#drop-down-third").show("slow")
 }
+// $(".click-me5").click(dropDown3)
 $(".click-me5").click(dropDown3)
 // WORKS - Show sub menu 3 when clicked
 $( "#drop-down3" ).click(function() {
@@ -110,6 +111,11 @@ $(".wrap-menu").click(function(){
 $("#drop-down4").click(function(e){
   e.stopPropagation();
 });
+
+var showButton1 = function() {
+  $("#button-div1").show("slow")
+}
+$("click-me4").click(showButton1)
 
 
 
@@ -155,18 +161,12 @@ $("#uncheck-all").click(function() {
 
 // BUTTON
 $("#button1").click(function() {
-  $("#row-1").clone().appendTo("#new-list")
 })
 // // DELETE BUTTON
 var deleteButton = function() {
   $("#delete-button").show("slow")
 }
 $("#apply-button").click(deleteButton)
-
-// var deleteButton2 = function() {
-//   $("#delete-button2").show("slow")
-// }
-// $("#sub-menu5").click(deleteButton2)
 
 var deleteRow = function() {
   $("#static-drop-down2").remove()

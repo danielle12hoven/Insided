@@ -26,6 +26,13 @@ h3 {
   display: none;
   position: fixed;
 }
+.add-button {
+  display: block;
+  clear: both;
+}
+#button1 {
+  display: none;
+}
 hr {
   clear: both;
 }
@@ -35,6 +42,10 @@ hr {
 /* In this case I floated the UL and Li */
 .clearfix:after {
     display:block;
+}
+
+.li-color:hover {
+  background-color: #add8e6;
 }
 
 
