@@ -18,10 +18,13 @@ h3 {
 }
 #delete-button {
   display: inline-block;
-  margin-top: 3%;
+  margin-top: 4%;
+  top: 22.4%;
+  right: 20%;
   background-color: red;
   border-radius: 5px;
   display: none;
+  position: fixed;
 }
 hr {
   clear: both;
@@ -108,12 +111,17 @@ span {
 /* clear: both allows div to be placed on new line */
 #drop-down-first {
   clear: both;
+  display: none;
 }
 #drop-down-fourth {
   clear: both;
+  display: none;
 }
 
 /* Setting display to none hides divs until ready to be called */
+#static-drop-down2 {
+  display: none;
+}
 #drop-down-second {
   display: none;
 }
@@ -130,9 +138,6 @@ span {
   display: none;
 }
 #fake-menu1 {
-  display: none;
-}
-#fake-menu2 {
   display: none;
 }
 .check-list{
