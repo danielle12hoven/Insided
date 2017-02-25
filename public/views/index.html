@@ -21,8 +21,9 @@
             <li class="drop-down" id="static-drop-down1">
                 <span id="fake-drop-down1">Comments<span class="arrow">&#9660;</span></span>
                   <ul class="sub-menu" id="fake-menu1">
-                    <li><input class="click-me" type="checkbox">Greater than 50</li>
-                    <li><input class="click-me" type="checkbox">Fewer than 50</li>
+                    <li><input class="click-me" type="checkbox">Comments</li>
+                    <li><input class="click-me" type="checkbox">Deleted comments</li>
+                    <li><input class="click-me" type="checkbox">Notes</li>
                   </ul>
             </li>
             <li class="drop-down" id="static-drop-down2">
@@ -37,7 +38,7 @@
             <li class="drop-down" id="drop-down-first">
                 <span id="drop-down1">Choose Filter<span class="arrow">&#9660;</span></span>
                   <ul class="sub-menu" id="sub-menu1">
-                    <li><input class="click-me1" type="checkbox">Registration Date</li>
+                    <li><input class="click-me1" type="checkbox">Registered Date</li>
                     <li><input class="click-me1" type="checkbox">Event Date</li>
                   </ul>
             </li>
@@ -63,7 +64,7 @@
             <li class="drop-down" id="drop-down-fourth">
                 <span id="drop-down4">User Group<span class="arrow">&#9660;</span></span>
                   <ul class="sub-menu" id="sub-menu4">
-                    <li><input class="click-me4" type="checkbox">Registered User</li>
+                    <li><input class="click-me4" id="registered" type="checkbox">Registered User</li>
                     <li><input class="click-me4" type="checkbox">Moderator</li>
                     <li><input class="click-me4" type="checkbox">Super-user</li>
                   </ul>
@@ -72,17 +73,22 @@
             <li class="drop-down" id="drop-down-fifth">
                 <span id="drop-down5">Select 1 or More Options<span class="arrow">&#9660;</span></span>
                   <ul class="sub-menu" id=sub-menu5>
-                    <p>Group 1</p>
-                      <li><input class="click-me5" type="checkbox"> Option #1 for Group 1</li>
-                      <li><input class="click-me5" type="checkbox"> Option #2 for Group 1</li>
-                      <li><input class="click-me5" type="checkbox"> Option #3 for Group 1</li>
-                    <p>Group 2</p>
-                      <li><input class="click-me5" type="checkbox">Bacon</li>
-                      <li><input class="click-me5" type="checkbox">Ipsum</li>
-                      <li><input class="click-me5" type="checkbox">Dolor</li>
+                    <a class="check-list" id="check-all">Check All</a>
+                    <a class="check-list" id="uncheck-all">Uncheck All</a>
+                    <p class="check-list">Group 1</p>
+                      <li><input class="click-me5" name="list" type="checkbox"> Option #1 for Group 1</li>
+                      <li><input class="click-me5" name="list" type="checkbox"> Option #2 for Group 1</li>
+                      <li><input class="click-me5" name="list" type="checkbox"> Option #3 for Group 1</li>
+                    <p class="check-list">Group 2</p>
+                      <li><input class="click-me5" name="list" type="checkbox">Bacon</li>
+                      <li><input class="click-me5" name="list" type="checkbox">Ipsum</li>
+                      <li><input class="click-me5" name="list" type="checkbox">Dolor</li>
                   </ul>
             </li>
-            <button type="">X</button>
+            <button id="delete-button">X</button>
+          </ul>
+
+          <ul id="new-list">
           </ul>
 
         <div class="button-div">
@@ -94,7 +100,7 @@
 
         <h3>Columns</h3>
 
-        <ul class="clearfix" id="row-3">
+        <ul class="clearfix" id="row-4">
             <li class="check-boxes">
                   <ul class="sub-check-boxes">
                     <li><input class="column-list" type="checkbox">Usertitle</li>
@@ -109,7 +115,7 @@
                     <li><input class="column-list" type="checkbox">Topics</li>
                     <li><input class="column-list" type="checkbox">User group</li>
                     <li><input class="column-list" type="checkbox">Secondary user</li>
-                    <li><input class="column-list" type="checkbox">Registered user</li>
+                    <li><input class="column-list" id="registered" type="checkbox">Registered user</li>
                     <li><input class="column-list" type="checkbox">Last login</li>
                   </ul>
             </li>
@@ -127,7 +133,7 @@
                     <li><input class="column-list" type="checkbox">Amet</li>
                     <li><input class="column-list" type="checkbox">Tongue</li>
                     <li><input class="column-list" type="checkbox">Ribeye</li>
-                    <li><input class="column-list" type="checkbox">Tail</li>
+                    <li><input class="column-list" type="checkbox">Pork</li>
                     <li><input class="column-list" type="checkbox">Hamburger</li>
                   </ul>
             </li>
@@ -154,7 +160,7 @@
 
         <div class="button-div">
           <button id="button2">Update</button>
-          <a href="">cancel</a>
+          <a href="index.html">cancel</a>
         </div>
 
 

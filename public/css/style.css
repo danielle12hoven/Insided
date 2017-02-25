@@ -16,7 +16,13 @@ h3 {
   clear: both;
   margin-left: 60px;
 }
-
+#delete-button {
+  display: inline-block;
+  margin-top: 3%;
+  background-color: red;
+  border-radius: 5px;
+  display: none;
+}
 hr {
   clear: both;
 }
@@ -45,6 +51,9 @@ hr {
     border: solid black 1px;
     width: 200px;
     border-radius: 5px;
+}
+span {
+    width: 100px;
 }
 
 .drop-down-main {
@@ -126,7 +135,9 @@ hr {
 #fake-menu2 {
   display: none;
 }
-
+.check-list{
+  margin-left: 10px;
+}
 
 /* Allows menu's to drop down and show */
 .menu li/* :hover */ .sub-menu {
