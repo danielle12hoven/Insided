@@ -161,7 +161,7 @@ $("#button1").click(function() {
 var deleteButton = function() {
   $("#delete-button").show("slow")
 }
-$("#sub-menu3").click(deleteButton)
+$("#apply-button").click(deleteButton)
 
 // var deleteButton2 = function() {
 //   $("#delete-button2").show("slow")
@@ -169,8 +169,11 @@ $("#sub-menu3").click(deleteButton)
 // $("#sub-menu5").click(deleteButton2)
 
 var deleteRow = function() {
+  $("#static-drop-down2").remove()
+  $("#drop-down-first").remove()
   $("#drop-down-second").remove()
   $("#drop-down-third").remove()
+  $("#drop-down-fourth").remove()
   $("#drop-down-fifth").remove()
   $("#delete-button").remove()
 }
