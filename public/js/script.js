@@ -175,11 +175,14 @@ var deleteRow = function() {
 }
 $("#delete-button").click(deleteRow)
 
-
-// PART TWO //
-
-
-
+// SELECT ALL USERS FROM GRID
+$('.selectall').click(function() {
+    if ($(this).is(':checked')) {
+        $('[name=list2').prop('checked', true);
+    } else {
+        $('input[name=list2').prop('checked', false);
+    }
+});
 
 
 
