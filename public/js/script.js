@@ -165,8 +165,16 @@ var deleteRow = function() {
   $("#drop-down-fourth").hide()
   $("#drop-down-fifth").hide()
   $("#delete-button").hide()
+  $(".delete-tags").hide()
 }
 $("#delete-button").click(deleteRow)
+
+var uncheckCheckboxes = function() {
+  $("#delete-button").click(function() {
+    $('input[type=checkbox]').prop('checked', false);
+  });
+}
+uncheckCheckboxes()
 
 // SELECT ALL USERS FROM GRID
 $('.selectall').click(function() {
@@ -312,142 +320,207 @@ $('#following').click(function() {
 // TAG SECTION //
 var commentsButton = function(){
     $('#comments').click(function(){
-        var appendItem = $('<input type="button" id="comments-button" value="x comments"/>');
+        var appendItem = $('<input type="button" id="comments-button" class="delete-tags" value="x comments"/>');
         $(".tag-menu").append(appendItem);
     });
 };
 commentsButton()
-
-// NEED TO WORK ON THE DELETE!
-$("#comments-button").click(function() {
-  $(commentsButton).remove()
-})
-
+// DELETE TAG //
+$(document).on("click", "#comments-button", function(){
+   $(this).remove();
+});
 
 
 var deleted = function(){
     $('#deleted').click(function(){
-        var appendItem = $('<input type="button" value="x deleted"/>');
+        var appendItem = $('<input type="button" id="deleted-button" class="delete-tags" value="x deleted"/>');
         $(".tag-menu").append(appendItem);
     });
 };
 deleted()
+$(document).on("click", "#deleted-button", function(){
+   $(this).remove();
+});
+
 var notes = function(){
     $('#notes').click(function(){
-        var appendItem = $('<input type="button" value="x notes"/>');
+        var appendItem = $('<input type="button" id="notes-button" class="delete-tags" value="x notes"/>');
         $(".tag-menu").append(appendItem);
     });
 };
 notes()
+$(document).on("click", "#notes-button", function(){
+   $(this).remove();
+});
+
 var smaller = function(){
     $('#smaller').click(function(){
-        var appendItem = $('<input type="button" value="x smaller"/>');
+        var appendItem = $('<input type="button" id="smaller-button" class="delete-tags" value="x smaller"/>');
         $(".tag-menu").append(appendItem);
     });
 };
 smaller()
+$(document).on("click", "#smaller-button", function(){
+   $(this).remove();
+});
+
 var greater = function(){
     $('#greater').click(function(){
-        var appendItem = $('<input type="button" value="x greater"/>');
+        var appendItem = $('<input type="button" id="greater-button" class="delete-tags" value="x greater"/>');
         $(".tag-menu").append(appendItem);
     });
 };
 greater()
+$(document).on("click", "#greater-button", function(){
+   $(this).remove();
+});
+
+
 var registeredDate = function(){
     $('#registered-date').click(function(){
-        var appendItem = $('<input type="button" value="x registered date"/>');
+        var appendItem = $('<input type="button" id="registeredDate-button" class="delete-tags" value="x registered date"/>');
         $(".tag-menu").append(appendItem);
     });
 };
 registeredDate()
+$(document).on("click", "#registeredDate-button", function(){
+   $(this).remove();
+});
+
+
 var eventDate = function(){
     $('#event').click(function(){
-        var appendItem = $('<input type="button" value="x event date"/>');
+        var appendItem = $('<input type="button" id="eventDate-button" class="delete-tags" value="x event date"/>');
         $(".tag-menu").append(appendItem);
     });
 };
 eventDate()
+$(document).on("click", "#eventDate-button", function(){
+   $(this).remove();
+});
+
 var registeredBefore = function(){
     $('#before').click(function(){
-        var appendItem = $('<input type="button" value="x registered before"/>');
+        var appendItem = $('<input type="button" id="registeredBefore-button" class="delete-tags" value="x registered before"/>');
         $(".tag-menu").append(appendItem);
     });
 };
 registeredBefore()
+$(document).on("click", "#registeredBefore-button", function(){
+   $(this).remove();
+});
+
 var registeredAfter = function(){
     $('#after').click(function(){
-        var appendItem = $('<input type="button" value="x registered after"/>');
+        var appendItem = $('<input type="button" id="registeredAfter-button" class="delete-tags" value="x registered after"/>');
         $(".tag-menu").append(appendItem);
     });
 };
 registeredAfter()
+$(document).on("click", "#registeredAfter-button", function(){
+   $(this).remove();
+});
+
 var registeredOn = function(){
     $('#on').click(function(){
-        var appendItem = $('<input type="button" value="x registered on"/>');
+        var appendItem = $('<input type="button" id="registeredOn-button" class="delete-tags" value="x registered on"/>');
         $(".tag-menu").append(appendItem);
     });
 };
 registeredOn()
+$(document).on("click", "#registeredOn-button", function(){
+   $(this).remove();
+});
+
 var registeredUser = function(){
     $('#registered-user').click(function(){
-        var appendItem = $('<input type="button" value="x registered user"/>');
+        var appendItem = $('<input type="button" id="registeredUser-button" class="delete-tags" value="x registered user"/>');
         $(".tag-menu").append(appendItem);
     });
 };
 registeredUser()
-var moederator = function(){
+$(document).on("click", "#registeredUser-button", function(){
+   $(this).remove();
+});
+
+var moderator = function(){
     $('#moderator').click(function(){
-        var appendItem = $('<input type="button" value="x moderator"/>');
+        var appendItem = $('<input type="button" id="moderator-button" class="delete-tags" value="x moderator"/>');
         $(".tag-menu").append(appendItem);
     });
 };
-moederator()
+moderator()
+$(document).on("click", "#moderator-button", function(){
+   $(this).remove();
+});
+
 var superUser = function(){
     $('#super-user').click(function(){
-        var appendItem = $('<input type="button" value="x super-user"/>');
+        var appendItem = $('<input type="button" id="superUser-button" class="delete-tags" value="x super-user"/>');
         $(".tag-menu").append(appendItem);
     });
 };
 superUser()
-var option1 = function(){
-    $('#option 1').click(function(){
-        var appendItem = $('<input type="button" value="x option 1"/>');
+$(document).on("click", "#superUser-button", function(){
+   $(this).remove();
+});
+
+
+var profession = function(){
+    $('#option1').click(function(){
+        var appendItem = $('<input type="button" id="profession-button" class="delete-tags" value="x profession"/>');
         $(".tag-menu").append(appendItem);
     });
 };
-option1()
-var option2 = function(){
-    $('#option 2').click(function(){
-        var appendItem = $('<input type="button" value="x option 2"/>');
+profession()
+$(document).on("click", "#profession-button", function(){
+   $(this).remove();
+});
+
+
+var signature = function(){
+    $('#option2').click(function(){
+        var appendItem = $('<input type="button" id="signature-button" class="delete-tags" value="x signature"/>');
         $(".tag-menu").append(appendItem);
     });
 };
-option2()
-var option3 = function(){
-    $('#option 3').click(function(){
-        var appendItem = $('<input type="button" value="x option 3"/>');
+signature()
+$(document).on("click", "#signature-button", function(){
+   $(this).remove();
+});
+
+
+var badges = function(){
+    $('#option3').click(function(){
+        var appendItem = $('<input type="button" id="badges-button" class="delete-tags" value="x badges"/>');
         $(".tag-menu").append(appendItem);
     });
 };
-option3
-var bacon = function(){
-    $('#bacon').click(function(){
-        var appendItem = $('<input type="button" value="x bacon"/>');
+badges()
+$(document).on("click", "#badges-button", function(){
+   $(this).remove();
+});
+
+var followers = function(){
+    $('#followers').click(function(){
+        var appendItem = $('<input type="button" id="followers-button" class="delete-tags" value="x followers"/>');
         $(".tag-menu").append(appendItem);
     });
 };
-bacon()
-var ipsum = function(){
-    $('#ipsum').click(function(){
-        var appendItem = $('<input type="button" value="x ipsum"/>');
+followers()
+$(document).on("click", "#followers-button", function(){
+   $(this).remove();
+});
+
+
+var following = function(){
+    $('#following').click(function(){
+        var appendItem = $('<input type="button" id="following-button" class="delete-tags" value="x following"/>');
         $(".tag-menu").append(appendItem);
     });
 };
-ipsum()
-var dolor = function(){
-    $('#dolor').click(function(){
-        var appendItem = $('<input type="button" value="x dolor"/>');
-        $(".tag-menu").append(appendItem);
-    });
-};
-dolor()
+following()
+$(document).on("click", "#following-button", function(){
+   $(this).remove();
+});
+
