@@ -149,13 +149,6 @@ $("#uncheck-all").click(function() {
   $('input[name=list]').prop('checked', false);
 });
 
-// // TEST FOR EACH INDIVIDUAL CHECK BOX
-// $("#registered").click(function() {
-//   $(' input[type="checkbox"]').prop('checked', true);
-// });
-// $("#registered").click(function() {
-//   $(' #registered input[type="checkbox"]').prop('checked', false);
-// });
 
 
 // // DELETE BUTTON
@@ -187,19 +180,146 @@ $('.selectall').click(function() {
 
 
 
+// CHECK/UNCHECK EACH INDIVIDUAL CHECKBOX
+$('#comments').click(function() {
+    if ($(this).is(':checked')) {
+        $('[name=comments-list').prop('checked', true);
+    } else {
+        $('[name=comments-list').prop('checked', false);
+    }
+});
+$('#deleted').click(function() {
+    if ($(this).is(':checked')) {
+        $('[name=deleted-comments-list').prop('checked', true);
+    } else {
+        $('[name=deleted-comments-list').prop('checked', false);
+    }
+});
+$('#notes').click(function() {
+    if ($(this).is(':checked')) {
+        $('[name=notes-list').prop('checked', true);
+    } else {
+        $('[name=notes-list').prop('checked', false);
+    }
+});
+$('#registered-user').click(function() {
+    if ($(this).is(':checked')) {
+        $('[name=registered-user-list').prop('checked', true);
+    } else {
+        $('[name=registered-user-list').prop('checked', false);
+    }
+});
+$('#moderator').click(function() {
+    if ($(this).is(':checked')) {
+        $('[name=moderator-list').prop('checked', true);
+    } else {
+        $('[name=moderator-list').prop('checked', false);
+    }
+});
+$('#super-user').click(function() {
+    if ($(this).is(':checked')) {
+        $('[name=super-user-list').prop('checked', true);
+    } else {
+        $('[name=super-user-list').prop('checked', false);
+    }
+});
+$('#registered-date').click(function() {
+    if ($(this).is(':checked')) {
+        $('[name=registered-date-list').prop('checked', true);
+    } else {
+        $('[name=registered-date-list').prop('checked', false);
+    }
+});
+$('#event').click(function() {
+    if ($(this).is(':checked')) {
+        $('[name=event-date-list').prop('checked', true);
+    } else {
+        $('[name=event-date-list').prop('checked', false);
+    }
+});
+$('#greater').click(function() {
+    if ($(this).is(':checked')) {
+        $('[name=greater-list').prop('checked', true);
+    } else {
+        $('[name=greater-list').prop('checked', false);
+    }
+});
+$('#smaller').click(function() {
+    if ($(this).is(':checked')) {
+        $('[name=smaller-list').prop('checked', true);
+    } else {
+        $('[name=smaller-list').prop('checked', false);
+    }
+});
+$('#before').click(function() {
+    if ($(this).is(':checked')) {
+        $('[name=before-list').prop('checked', true);
+    } else {
+        $('[name=before-list').prop('checked', false);
+    }
+});
+$('#after').click(function() {
+    if ($(this).is(':checked')) {
+        $('[name=after-list').prop('checked', true);
+    } else {
+        $('[name=after-list').prop('checked', false);
+    }
+});
+$('#on').click(function() {
+    if ($(this).is(':checked')) {
+        $('[name=on-list').prop('checked', true);
+    } else {
+        $('[name=on-list').prop('checked', false);
+    }
+});
+$('#option1').click(function() {
+    if ($(this).is(':checked')) {
+        $('[name=profession-list').prop('checked', true);
+    } else {
+        $('[name=profession-list').prop('checked', false);
+    }
+});
+$('#option2').click(function() {
+    if ($(this).is(':checked')) {
+        $('[name=signature-list').prop('checked', true);
+    } else {
+        $('[name=signature-list').prop('checked', false);
+    }
+});
+$('#option3').click(function() {
+    if ($(this).is(':checked')) {
+        $('[name=badges-list').prop('checked', true);
+    } else {
+        $('[name=badges-list').prop('checked', false);
+    }
+});
+$('#followers').click(function() {
+    if ($(this).is(':checked')) {
+        $('[name=followers-list').prop('checked', true);
+    } else {
+        $('[name=followers-list').prop('checked', false);
+    }
+});
+$('#following').click(function() {
+    if ($(this).is(':checked')) {
+        $('[name=following-list').prop('checked', true);
+    } else {
+        $('[name=following-list').prop('checked', false);
+    }
+});
+
+
 // TAG SECTION //
 var comments = function(){
     $('#comments').click(function(){
         var appendItem = $('<input type="button" id="comments-button" value="x comments"/>');
         $(".tag-menu").append(appendItem);
     });
-    // $("#comments-button").hide()
 };
 comments()
 
 // NEED TO WORK ON THE DELETE!
 $("#comments-button").click(comments)
-
 
 
 
