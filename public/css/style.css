@@ -214,7 +214,7 @@ ul {
   width:1000px;
   height: 700px;
   margin:0px auto;
-  background: #ececec;
+  background: white;
   border: solid black 1px;
   box-shadow:0px 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -238,38 +238,50 @@ ul {
 /* using the [class*=...] allows us to apply CSS to all classes that are */
 /* ... similar and that contain the word "col-" */
 [class*='col-'] {
-    float: left;
-    min-height: 1px;
-    /* padding: 12px 0 12px 0; */
-    background-color: white;
+  float: left;
+  min-height: 1px;
+  background-color: white;
+  outline: 1px solid #000000;
+  border-radius: 5%;
 }
 
 .col-1 {
   width: 20.00%;
- text-align: left;
+  text-align: left;
 }
 .col-2 {
   width: 10.00%;
- text-align: center;
+  text-align: center;
 }
 .col-3 {
   width: 15.00%;
- text-align: center;
-}
-
-.outline *{
-    outline: 1px solid #000000;
+  text-align: center;
 }
 
 .row-checkboxes {
   outline: none;
 }
 
+#grid-row-1 {
+  width: 19.90%;
+  margin-left: 2px;
+  outline: none;
+}
+#grid-row-2 {
+  outline: none;
+}
+#grid-row-3 {
+  outline: none;
+  width: 14.75%;
+}
+
+
+
 /*-- some extra column content styling --*/
 [class*='col-'] > p {
- background-color: white;
- padding: 0;
- margin: 0;
- color: black;
- padding: 12px;
+   background-color: white;
+   padding: 0;
+   margin: 0;
+   color: black;
+   padding: 12px;
 }
