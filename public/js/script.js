@@ -144,9 +144,23 @@ $("#drop-down-fifth").click(function(e){
 // CHECK/UNCHECK BUTTONS
 $("#check-all").click(function() {
   $('input[name=list]').prop('checked', true);
-});
+        $('[name=following-list').prop('checked', true),
+        $('[name=followers-list').prop('checked', true),
+        $('[name=badges-list').prop('checked', true),
+        $('[name=signature-list').prop('checked', true),
+        $('[name=profession-list').prop('checked', true)});
 $("#uncheck-all").click(function() {
   $('input[name=list]').prop('checked', false);
+        $('[name=following-list').prop('checked', false),
+        $('[name=followers-list').prop('checked', false),
+        $('[name=badges-list').prop('checked', false),
+        $('[name=signature-list').prop('checked', false),
+        $('[name=profession-list').prop('checked', false);
+        $("#profession-button").remove();
+        $("#signature-button").remove();
+        $("#badges-button").remove();
+        $("#following-button").remove();
+        $("#followers-button").remove();
 });
 
 
@@ -169,6 +183,7 @@ var deleteRow = function() {
 }
 $("#delete-button").click(deleteRow)
 
+// UNCHECKS ALL BOXES ON CLICKING RED DELETE BUTTON
 var uncheckCheckboxes = function() {
   $("#delete-button").click(function() {
     $('input[type=checkbox]').prop('checked', false);
@@ -315,6 +330,7 @@ $('#following').click(function() {
         $('[name=following-list').prop('checked', false);
     }
 });
+
 
 
 // TAG SECTION //
@@ -523,4 +539,20 @@ following()
 $(document).on("click", "#following-button", function(){
    $(this).remove();
 });
+
+var selectAllOptions = function(){
+    $('#check-all').click(function(){
+        var appendItem1 = $('<input type="button" id="profession-button" class="delete-tags" value="x profession"/>');
+        $(".tag-menu").append(appendItem1);
+        var appendItem2 = $('<input type="button" id="signature-button" class="delete-tags" value="x signature"/>');
+        $(".tag-menu").append(appendItem2);
+        var appendItem3 = $('<input type="button" id="badges-button" class="delete-tags" value="x badges"/>');
+        $(".tag-menu").append(appendItem3);
+        var appendItem4 = $('<input type="button" id="followers-button" class="delete-tags" value="x followers"/>');
+        $(".tag-menu").append(appendItem4);
+        var appendItem5 = $('<input type="button" id="following-button" class="delete-tags" value="x following"/>');
+        $(".tag-menu").append(appendItem5);
+});
+};
+selectAllOptions()
 
