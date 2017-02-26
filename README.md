@@ -13,3 +13,13 @@ Lanugages/frameworks used:
 - HTML
 - CSS
 - Postgresql
+
+
+For the CSS grid I looked up a tutorial:
+http://j4n.co/blog/Creating-your-own-css-grid-system
+- from here to took the basics and adjusted/personalized it to my needs
+
+
+
+
+
