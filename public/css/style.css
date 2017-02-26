@@ -201,18 +201,64 @@ ul {
   background-color: #CCCCCC;
   width: 1000px;
   height: 100px;
+  display: block;
+  margin:0px auto;
 }
+
 
 
 
 /* PART 2 */
 .menu2 {
-    width:1000px;
-    height: 700px;
-    margin:0px auto;
-    background: white;
-    border: solid black 1px;
-    box-shadow:0px 1px 3px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+  width:1000px;
+  height: 700px;
+  margin:0px auto;
+  background: white;
+  border: solid black 1px;
+  box-shadow:0px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
+
+/* The Table with rows and columns */
+    .grid-container{
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    /*-- our cleafix hack -- */
+    .row:before,
+    .row:after {
+        content:"";
+          display: table ;
+        clear:both;
+    }
+
+    [class*='col-'] {
+        float: left;
+        min-height: 1px;
+        width: 16.66%;
+        /*-- our gutter -- */
+        padding: 12px;
+        background-color: #FFDCDC;
+    }
+
+    .col-1{ width: 15.20%; }
+    /* .col-1{ width: 16.66%; } */
+    .col-2{ width: 7.50%; }
+    /* .col-2{ width: 33.33%; } */
+    .col-3{ width: 13.25%;    }
+/*  */
+
+    .outline, .outline *{
+        outline: 1px solid #F6A1A1;
+    }
+
+    /*-- some extra column content styling --*/
+    [class*='col-'] > p {
+     background-color: #FFC2C2;
+     padding: 0;
+     margin: 0;
+     text-align: center;
+     color: white;
+    }

@@ -187,15 +187,17 @@ $("#delete-button").click(deleteRow)
 // TAG SECTION //
 var comments = function(){
     $('#comments').click(function(){
-        var appendItem1 = $('<input type="button" id="comments-button" value="x comments"/>');
-        $(".tag-menu").append(appendItem1);
+        var appendItem = $('<input type="button" id="comments-button" value="x comments"/>');
+        $(".tag-menu").append(appendItem);
     });
+    // $("#comments-button").hide()
 };
 comments()
 
-$("#comments").click(function() {
-  (appendItem1).hide()
-})
+// NEED TO WORK ON THE DELETE!
+$("#comments-button").click(comments)
+
+
 
 
 var deleted = function(){
