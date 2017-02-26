@@ -310,16 +310,18 @@ $('#following').click(function() {
 
 
 // TAG SECTION //
-var comments = function(){
+var commentsButton = function(){
     $('#comments').click(function(){
         var appendItem = $('<input type="button" id="comments-button" value="x comments"/>');
         $(".tag-menu").append(appendItem);
     });
 };
-comments()
+commentsButton()
 
 // NEED TO WORK ON THE DELETE!
-$("#comments-button").click(comments)
+$("#comments-button").click(function() {
+  $(commentsButton).remove()
+})
 
 
 

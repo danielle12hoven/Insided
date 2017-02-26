@@ -8,6 +8,9 @@ h3 {
   margin-left: 60px;
 }
 
+a {
+  text-decoration: none;
+}
 
 /* Button stylng */
 .button-div {
@@ -19,8 +22,8 @@ h3 {
 #delete-button {
   display: inline-block;
   margin-top: 4%;
-  top: 22.4%;
-  right: 20%;
+  top: 5%;
+  right: 35%;
   background-color: red;
   border-radius: 5px;
   display: none;
@@ -38,7 +41,12 @@ h3 {
 hr {
   clear: both;
 }
-
+#button3 {
+  float: right;
+  margin: 10px;
+  margin-top: 33px;
+  clear: both;
+}
 
 /* Clearfix will allow divs to move if screen gets smaller */
 /* In this case I floated the UL and Li */
@@ -65,19 +73,24 @@ hr {
 .drop-down {
     list-style:none;
     border: solid black 1px;
-    width: 200px;
+    width: 180px;
     border-radius: 5px;
+    padding-left: 0px;
 }
 span {
     width: 100px;
 }
-
-.drop-down-main {
-    list-style:none;
-    border: solid black 1px;
-    width: 200px;
-    border-radius: 5px;
+#fake-drop-down1,
+#fake-drop-down2,
+#drop-down1,
+#drop-down2,
+#drop-down3,
+#drop-down4,
+#drop-down5 {
+  width: 190px;
+  padding-left: 10px;
 }
+
 
 
 /* This changes the span's color to white (the drop-down item) */
@@ -92,8 +105,11 @@ span {
     font-size:11px;
     line-height:0%;
 }
-
-
+img {
+  width: 10%;
+  height: 10%;
+  float: right;
+}
 
 /* Creates the drop down, and contains the drop-down items */
 .menu > ul > li {
@@ -212,9 +228,9 @@ ul {
 /* PART 2 */
 .menu2 {
   width:1000px;
-  height: 700px;
+  height: 650px;
   margin:0px auto;
-  background: white;
+  background: #ececec;
   border: solid black 1px;
   box-shadow:0px 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
