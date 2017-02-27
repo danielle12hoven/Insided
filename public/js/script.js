@@ -41,8 +41,9 @@ $("#fake-drop-down2").click(function(e){
 var dropDown1 = function() {
   // $("#drop-down-first").show("slow")
   $("#drop-down-first").css({
-    opacity: '1',
-    cursor: 'default'
+    'opacity': '1',
+    'cursor': 'default',
+    'pointer-events': 'inherit'
   });
 }
 $(".click-me-static").click(dropDown1)
@@ -101,8 +102,9 @@ $( "#drop-down3" ).click(function() {
 var newRow = function() {
   // $("#drop-down-fourth").show("slow")
   $("#drop-down-fourth").css({
-    opacity: '1',
-    cursor: 'default'
+    'opacity': '1',
+    'cursor': 'default',
+    'pointer-events': 'inherit'
   });
 }
 $(".click-me1").click(newRow)
