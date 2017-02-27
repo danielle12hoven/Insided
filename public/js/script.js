@@ -581,15 +581,94 @@ selectAllOptions()
 
 
 // ON CLICKING CHECKBOX HIGHLIGHT DIV //
-// $('.selectall').click(function() {
-//     if ($(this).is(':checked')) {
-//         $(".col-1").attr('Style','background-color: blue;');
-//     } else {
-//         $(".col-1").attr('Style','background-color: white;');
-//     }
-// }
-$(".selectall").on('click',function() {
-$(div).css('color', 'blue')});
+$('.selectall').click(function() {
+    if ($(this).is(':checked')) {
+    $(".highlight").css('background-color', '#add8e6');
+    } else {
+    $(".highlight").css('background-color', 'white');
+    }
+});
+
+$('#check-highlight-1').click(function() {
+    if ($(this).is(':checked')) {
+    $(".highlight-1").css('background-color', '#add8e6');
+    } else {
+    $(".highlight-1").css('background-color', 'white');
+    }
+});
+
+$('#check-highlight-2').click(function() {
+    if ($(this).is(':checked')) {
+    $(".highlight-2").css('background-color', '#add8e6');
+    } else {
+    $(".highlight-2").css('background-color', 'white');
+    }
+});
+
+$('#check-highlight-3').click(function() {
+    if ($(this).is(':checked')) {
+    $(".highlight-3").css('background-color', '#add8e6');
+    } else {
+    $(".highlight-3").css('background-color', 'white');
+    }
+});
+
+$('#check-highlight-4').click(function() {
+    if ($(this).is(':checked')) {
+    $(".highlight-4").css('background-color', '#add8e6');
+    } else {
+    $(".highlight-4").css('background-color', 'white');
+    }
+});
+
+$('#check-highlight-5').click(function() {
+    if ($(this).is(':checked')) {
+    $(".highlight-5").css('background-color', '#add8e6');
+    } else {
+    $(".highlight-5").css('background-color', 'white');
+    }
+});
+
+$('#check-highlight-6').click(function() {
+    if ($(this).is(':checked')) {
+    $(".highlight-6").css('background-color', '#add8e6');
+    } else {
+    $(".highlight-6").css('background-color', 'white');
+    }
+});
+
+$('#check-highlight-7').click(function() {
+    if ($(this).is(':checked')) {
+    $(".highlight-7").css('background-color', '#add8e6');
+    } else {
+    $(".highlight-7").css('background-color', 'white');
+    }
+});
+
+$('#check-highlight-8').click(function() {
+    if ($(this).is(':checked')) {
+    $(".highlight-8").css('background-color', '#add8e6');
+    } else {
+    $(".highlight-8").css('background-color', 'white');
+    }
+});
+
+$('#check-highlight-9').click(function() {
+    if ($(this).is(':checked')) {
+    $(".highlight-9").css('background-color', '#add8e6');
+    } else {
+    $(".highlight-9").css('background-color', 'white');
+    }
+});
+
+$('#check-highlight-10').click(function() {
+    if ($(this).is(':checked')) {
+    $(".highlight-10").css('background-color', '#add8e6');
+    } else {
+    $(".highlight-10").css('background-color', 'white');
+    }
+});
+
 
 
 
