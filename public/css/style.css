@@ -131,10 +131,13 @@ span {
     font-size:11px;
     line-height:0%;
 }
-img {
+img.window-size {
   width: 10%;
   height: 10%;
   float: right;
+}
+img.face-icon {
+  width: 7%;
 }
 
 /* Creates the drop down, and contains the drop-down items */
