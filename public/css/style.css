@@ -50,7 +50,7 @@ a {
   position: absolute;
 }
 .add-button {
-  display: block;
+  display: none;
   clear: both;
   margin-left: 60px;
 }
@@ -157,26 +157,28 @@ img {
 /* clear: both allows div to be placed on new line */
 #drop-down-first {
   clear: both;
-  display: none;
+  /* display: none; */
 }
 #drop-down-fourth {
   clear: both;
-  display: none;
+  /* display: none; */
 }
 
 /* Setting display to none hides divs until ready to be called */
-#static-drop-down2 {
-  display: none;
-}
-#drop-down-second {
-  display: none;
-}
-#drop-down-third {
-  display: none;
-}
+#static-drop-down2,
+#drop-down-second,
+#drop-down-third,
 #drop-down-fifth {
   display: none;
 }
+
+#drop-down-first,
+#drop-down-fourth {
+  opacity: .65;
+  cursor: not-allowed;
+
+}
+
 #sub-menu1 {
   display: none;
 }

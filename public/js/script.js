@@ -11,7 +11,7 @@ $( "#fake-drop-down1" ).click(function() {
 $(".wrap-menu").click(function(){
   $("#fake-menu1").hide("slow");
 });
-// Hides the menu when clicking anywhere but inside the drop-down
+// Hides the submenu when clicking anywhere but inside the drop-down
 $("#fake-drop-down1").click(function(e){
   e.stopPropagation();
 });
@@ -39,7 +39,11 @@ $("#fake-drop-down2").click(function(e){
 
 // DROP DOWN 1
 var dropDown1 = function() {
-  $("#drop-down-first").show("slow")
+  // $("#drop-down-first").show("slow")
+  $("#drop-down-first").css({
+    opacity: '1',
+    cursor: 'default'
+  });
 }
 $(".click-me-static").click(dropDown1)
 // Show sub menu 1 when clicked (toggle open and close)
@@ -62,7 +66,7 @@ $("#drop-down1").click(function(e){
 var dropDown2 = function() {
   $("#drop-down-second").show("slow")
 }
-$(".click-me-static2").click(dropDown2)
+$("#button1").click(dropDown2)
 // WORKS - Show sub menu 2 when clicked
 $( "#drop-down2" ).click(function() {
   $( "#sub-menu2" ).toggle("slow", function(){
@@ -95,7 +99,11 @@ $( "#drop-down3" ).click(function() {
 
 // DROP DOWN 4
 var newRow = function() {
-  $("#drop-down-fourth").show("slow")
+  // $("#drop-down-fourth").show("slow")
+  $("#drop-down-fourth").css({
+    opacity: '1',
+    cursor: 'default'
+  });
 }
 $(".click-me1").click(newRow)
 // Show sub menu 3 when clicked
@@ -123,7 +131,7 @@ $("click-me4").click(showButton1)
 var dropDown5 = function() {
   $("#drop-down-fifth").show("slow")
 }
-$(".click-me2").click(dropDown5)
+$("#button1").click(dropDown5)
 // WORKS - Show sub menu 2 when clicked
 $( "#drop-down5" ).click(function() {
   $( "#sub-menu5" ).toggle("slow", function(){
@@ -143,14 +151,14 @@ $("#drop-down-fifth").click(function(e){
 
 // CHECK/UNCHECK BUTTONS
 $("#check-all").click(function() {
-  $('input[name=list]').prop('checked', true);
+        $('input[name=list]').prop('checked', true);
         $('[name=following-list').prop('checked', true),
         $('[name=followers-list').prop('checked', true),
         $('[name=badges-list').prop('checked', true),
         $('[name=signature-list').prop('checked', true),
         $('[name=profession-list').prop('checked', true)});
 $("#uncheck-all").click(function() {
-  $('input[name=list]').prop('checked', false);
+        $('input[name=list]').prop('checked', false);
         $('[name=following-list').prop('checked', false),
         $('[name=followers-list').prop('checked', false),
         $('[name=badges-list').prop('checked', false),
@@ -164,6 +172,12 @@ $("#uncheck-all").click(function() {
 });
 
 
+
+// APPLY BUTTON //
+var applyButton = function() {
+  $(".add-button").show("slow")
+}
+$(".click-me4").click(applyButton)
 
 // // DELETE BUTTON
 var deleteButton = function() {
@@ -555,4 +569,20 @@ var selectAllOptions = function(){
 });
 };
 selectAllOptions()
+
+
+
+// ON CLICKING CHECKBOX HIGHLIGHT DIV //
+// $('.selectall').click(function() {
+//     if ($(this).is(':checked')) {
+//         $(".col-1").attr('Style','background-color: blue;');
+//     } else {
+//         $(".col-1").attr('Style','background-color: white;');
+//     }
+// }
+$(".selectall").on('click',function() {
+$(div).css('color', 'blue')});
+
+
+
 
