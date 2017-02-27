@@ -28,7 +28,7 @@ img#insided-image {
 /* MAIN CODE */
 .navigation {
   width: 110px;
-  height: 1500px;
+  height: 1590px;
   float: left;
   background-color: #EAFAE4;
   z-index: 1;
@@ -141,11 +141,11 @@ hr {
 
 
 .change-rows-button {
-  width: 10%;
+  width: 90px;
   display: inline-block;
   float: right;
   margin: 0 auto;
-  margin-top: -22px;
+  margin-top: -46px;
   padding: 0 5px 0 5px;
   clear: both;
   color:#000;
@@ -156,7 +156,35 @@ hr {
   border: 1px solid #666;
   box-shadow:0px 1px 3px rgba(0, 0, 0, 0.2);
 }
+.change-rows-button2 {
+  width: 90px;
+  display: inline-block;
+  float: right;
+  margin: 20px -23.4% 20px 0;
+  padding: 0 5px 0 5px;
 
+  color:#000;
+  text-align: center;
+  text-decoration:none;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #666;
+  box-shadow:0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.change-rows-button3 {
+  color: black;
+  float: right;
+  display: inline-block;
+  margin: 20px 26% 20px 0;
+  z-index: -1;
+}
+.change-rows-button4 {
+  color: black;
+  float: right;
+  display: inline-block;
+  margin: 15px 14% 20px 0;
+  z-index: -1;}
 
 /* Clearfix will allow divs to move if screen gets smaller */
 /* In this case I floated the UL and Li */
