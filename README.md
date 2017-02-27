@@ -5,21 +5,20 @@ Inside of this repo you will find the code that will allow you to create:
 - with animation
 - checkboxes
 - one menu will appear at a time
-- the stored information should be saved in a database
-
+- a side-bar menu will be provided to navigate from page to page
 
 Lanugages/frameworks used:
 - JavaScript (jquery)
 - HTML
 - CSS
-- Postgresql
 
-
-For the CSS grid I looked up a tutorial:
+For the CSS grid I looked up and followed a useful tutorial:
 http://j4n.co/blog/Creating-your-own-css-grid-system
 - from here to took the basics and adjusted/personalized it to my needs
 
-
+Font used:
+- Ek Mukta Front
+- Taken from Google
 
 
 

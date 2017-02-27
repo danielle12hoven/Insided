@@ -27,25 +27,26 @@ img#insided-image {
 
 /* MAIN CODE */
 .navigation {
-  width: 110px;
+  width: 130px;
   height: 1590px;
   float: left;
   background-color: #EAFAE4;
   z-index: 1;
   position: absolute;
   border-radius: 5px;
-  background-color: #D2F7C9;
   margin-top: -20px;
 }
 
 .nav-bar {
-  height: 100px;
-  text-align: center;
+  height: 35px;
   margin: 5px 2px 5px 0;
   box-shadow:0px 10px 50px rgba(0, 0, 0, 0.2);
+  padding-top: 5px;
+  padding-left: 5px;
+  background-color: #D2F7C9;
 }
 .nav-bar:hover {
-  box-shadow:0px 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow:-1px -1px -3px rgba(0, 0, 0, 0.3);
   background-color: #add8e6;
 }
 
