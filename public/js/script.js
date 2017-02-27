@@ -672,63 +672,98 @@ $('#check-highlight-10').click(function() {
 var cloneInput1 = function(){
     $('.click-me-static').click(function(){
       if ($(this).is(':checked')) {
-        var appendInputStatic = $('#static-drop-down1').clone();
-        $(appendInputStatic).appendTo("#showInputs");
+        var appendInputStatic = $('#static-drop-down1').clone().prop({ id: "static-drop-down1-new", name: "newName"});
+        $(appendInputStatic).appendTo(".showInputs");
       } else {
-        $("#showInputs").remove(appendInputStatic);
+        $(".showInputs").remove(appendInputStatic);
       }
 });
 };
 cloneInput1()
 
+
 var cloneInput2 = function(){
     $('.click-me-static2').click(function(){
-        var appendInputStatic2 = $('#static-drop-down2');
-        $(appendInputStatic2).clone().appendTo("#showInputs");
+      if ($(this).is(':checked')) {
+        var appendInputStatic2 = $('#static-drop-down2').clone().prop({ id: "static-drop-down2-new", name: "newName"});
+        $(appendInputStatic2).appendTo(".showInputs");
+      } else {
+        $(".showInputs").remove(appendInputStatic2);
+      }
 });
 };
 cloneInput2()
 
 var cloneInput3 = function(){
     $('.click-me1').click(function(){
-        var appendInput1 = $('drop-down-first');
-        $(appendInput1).clone().appendTo("#showInputs");
+      if ($(this).is(':checked')) {
+        var appendInput1 = $('#drop-down-first').clone().prop({ id: "drop-down-first-new", name: "newName"});
+        $(appendInput1).appendTo(".showInputs");
+       } else {
+        $(".showInputs").remove(appendInput1);
+      }
 });
 };
 cloneInput3()
 
 var cloneInput4 = function(){
     $('.click-me2').click(function(){
-        var appendInput2 = $('drop-down-second');
-        $(appendInput2).clone().appendTo("#showInputs");
+      if ($(this).is(':checked')) {
+        var appendInput2 = $('#drop-down-second').clone().prop({ id: "drop-down-second-new", name: "newName"});
+        $(appendInput2).appendTo(".showInputs");
+       } else {
+        $(".showInputs").remove(appendInput2);
+      }
 });
 };
 cloneInput4()
 
 var cloneInput5 = function(){
     $('.click-me3').click(function(){
-        var appendInput3 = $('drop-down-third');
-        $(appendInput3).clone().appendTo("#showInputs");
+      if ($(this).is(':checked')) {
+        var appendInput3 = $('#drop-down-third').clone().prop({ id: "drop-down-third-new", name: "newName"});
+        $(appendInput3).appendTo(".showInputs");
+       }else {
+        $(".showInputs").remove(appendInput3);
+      }
 });
 };
 cloneInput5()
 
 var cloneInput6 = function(){
     $('.click-me4').click(function(){
-        var appendInput4 = $('drop-down-fourth');
-        $(appendInput4).clone().appendTo("#showInputs");
+      if ($(this).is(':checked')) {
+        var appendInput4 = $('#drop-down-fourth').clone().prop({ id: "drop-down-fourth-new", name: "newName"});
+        $(appendInput4).appendTo(".showInputs");
+       }else {
+        $(".showInputs").remove(appendInput4);
+      }
 });
 };
 cloneInput6()
 
 var cloneInput7 = function(){
     $('.click-me5').click(function(){
-        var appendInput5 = $('drop-down-fifth');
-        $(appendInput5).clone().appendTo("#showInputs");
+      if ($(this).is(':checked')) {
+        var appendInput5 = $('#drop-down-fifth').clone().prop({ id: "drop-down-fifth-new", name: "newName"});
+        $(appendInput5).appendTo(".showInputs");
+       }else {
+        $(".showInputs").remove(appendInput5);
+      }
 });
 };
 cloneInput7()
 
-
+var cloneInput1 = function(){
+    $('.click-me-static').click(function(){
+      if ($(this).is(':checked')) {
+        var appendInputStatic = $('#static-drop-down1').clone().prop({ id: "static-drop-down1-new", name: "newName"});
+        $(appendInputStatic).appendTo(".showInputs");
+      } else {
+        $(".showInputs").remove(appendInputStatic);
+      }
+});
+};
+cloneInput1()
 
 

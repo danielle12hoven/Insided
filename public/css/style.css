@@ -255,6 +255,7 @@ ul {
 
 /* PART 2 */
 .menu2 {
+  z-index: -1;
   width:1000px;
   height: 650px;
   margin:0px auto;
@@ -337,17 +338,28 @@ ul {
 }
 
 
-.highlight11 {
-
+.wrap-menu3 {
+  float: bottom;
+  top: 1300px;
+  left: 200px;
 }
-/* .menu3 {
-    width:1000px;
-    height: 700px;
-    margin:0px auto;
-    background: #ececec;
-    border: solid black 1px;
-    box-shadow:0px 1px 3px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-} */
 
+.showInputs {
+  width: 1000px;
+  height:80px;
+  /* background-color: green; */
+  max-height: 100%;
+  overflow: auto;
+}
+
+#static-drop-down1-new,
+#static-drop-down2-new,
+#drop-down-first-new,
+#drop-down-second-new,
+#drop-down-third-new,
+#drop-down-fourth-new,
+#drop-down-fifth-new {
+  display: inline;
+  /* overflow: auto; */
+}
 
