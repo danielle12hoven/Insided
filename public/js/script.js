@@ -89,7 +89,7 @@ var dropDown3 = function() {
   $("#drop-down-third").show("slow")
 }
 // $(".click-me5").click(dropDown3)
-$(".click-me5").click(dropDown3)
+$(".click-me2").click(dropDown3)
 // WORKS - Show sub menu 3 when clicked
 $( "#drop-down3" ).click(function() {
   $( "#sub-menu3" ).toggle("slow", function(){
@@ -185,7 +185,13 @@ $(".click-me4").click(applyButton)
 var deleteButton = function() {
   $("#delete-button").show("slow")
 }
-$("#apply-button").click(deleteButton)
+// $("#apply-button").click(deleteButton)
+$(".click-me5").click(deleteButton)
+$(".click-me2").click(deleteButton)
+$(".click-me-static2").click(deleteButton)
+$("#check-all").click(deleteButton)
+
+
 
 var deleteRow = function() {
   $("#static-drop-down2").hide()
